@@ -18,7 +18,7 @@ public class day2practice {
 		
 		WebElement login = driver.findElement(By.cssSelector("#login-button"));
 		
-		// dashboard elements
+		// dashboard elements #user-name, #password, #login-button, #header_container > div.header_secondary_container > span
 		
 		username.sendKeys("standard_user");
 		password.sendKeys("secret_sauce");
@@ -35,5 +35,5 @@ public class day2practice {
 		 }
 
 	}
-
+	
 }

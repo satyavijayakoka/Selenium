@@ -2,6 +2,7 @@ package Selenium;
 
 import java.util.List;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,6 +23,8 @@ public class day6locators {
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.saucedemo.com/");
 		
+// <input class="input_error form_input" placeholder="Username" type="text" data-test="username" id="user-name" name="user-name" autocorrect="off" autocapitalize="none" value="">
+		
 	//	WebElement ele =driver.findElement(By.id("user-name"));
 	//	ele.sendKeys("standard_user");
 		
@@ -36,21 +39,22 @@ public class day6locators {
 		
 		// class name locator-- class locator of html element to select the element
 		
-	//	WebElement ele = driver.findElement(By.className("input_error"));
+		WebElement ele = driver.findElement(By.className("input_error"));
 		
-	//	ele.sendKeys("standard_user");
+		ele.sendKeys("standard_user");
 		
-	//	List<WebElement> elelist = driver.findElements(By.className("input_error"));
-	//	elelist.get(1).sendKeys("secret_sauce");
+		List<WebElement> elelist = driver.findElements(By.className("input_error"));
+		elelist.get(1).sendKeys("secret_sauce");
 		
 		
 		//tag name selector
+		
 		driver.findElements(By.tagName("input")).get(1).sendKeys("secret_sauce");
 		
 		// CssSelector Locator
-			// .className
-			// #idValue
-			// tagName
+			// .className-- swaglabs
+			// #idValue-- username
+			// tagName-- username,password,loginbutton--- form(tagname)
 			// tagName[attribute = "value"]
 //<input class="input_error form_input" placeholder="Username" type="text" data-test="username" id="user-name" name="user-name" autocorrect="off" autocapitalize="none" value="" fdprocessedid="swqhlf">
 			
@@ -63,7 +67,7 @@ public class day6locators {
 		
 		// assignment
 		// Xpath 
-				//  --- //tagName[@attriute = 'value']
+				//  --- //tagName[@attribute = 'value']
 				
 				
 				// LinkText 

@@ -13,7 +13,9 @@ public class day5testcases312023 {
 
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.saucedemo.com/");
-		//TestCase1 
+		
+		//TestCase1
+		
 		String expectedTitle ="Swag Labs";
 		String actualTitle = driver.getTitle();
 		if(expectedTitle.equals(actualTitle)) {
@@ -38,9 +40,9 @@ public class day5testcases312023 {
 		}
 		else {
 			System.out.println("test case 2 fails");
-		}*/
+		}
 		
-		// Test Case 3
+		// Test Case 3; #header_container > div.primary_header > div.header_label > div
 		
 
 	/*	driver.get("https://www.saucedemo.com/");
@@ -58,9 +60,9 @@ public class day5testcases312023 {
 		}
 		else {
 			System.out.println("test case 3 fail");
-		}*/
+		} */
 		
-		// Test Case 4
+		// Test Case 4 
 		String expectedProduct = "Sauce Labs Bolt T-Shirt";
 		driver.get("https://www.saucedemo.com/");
 		WebElement username =driver.findElement(By.cssSelector("#user-name"));
@@ -73,7 +75,7 @@ public class day5testcases312023 {
 		boolean productFound = false;
 		
 		for(int i =0; i< items.size(); i++) {
-			//System.out.println(items.get(i).getText());
+		//	System.out.println(items.get(i).getText()); 
 			
 			if(items.get(i).getText().equals(expectedProduct)) {
 				productFound = true;
