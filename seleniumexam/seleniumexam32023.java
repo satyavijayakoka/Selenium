@@ -12,23 +12,7 @@ public class seleniumexam32023 {
 
 		ChromeDriver driver = new ChromeDriver();
 		
-		driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
-		driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).sendKeys("satya");
-		driver.findElement(By.cssSelector("#contact_form > input:nth-child(2)")).sendKeys("koka");
-		driver.findElement(By.cssSelector("#contact_form > input:nth-child(3)")).sendKeys("ammu.duggi123@gmail.com");
-		driver.findElement(By.cssSelector("#contact_form > textarea")).sendKeys("i am learning selenium");
-		//driver.findElement(By.cssSelector("#form_buttons > input:nth-child(2)")).click();
-		// question 1
-		
-		/*String expectedtitle = "";
-		String actualtitle = "";
-		if(expectedtitle.equals(actualtitle){
-			System.out.println("test case pass");
-			
-		}else {
-			System.out.println("test case fail");
-		}*/
-		
+	// question 1
 		
 		driver.get("http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
 		 String pagetitle =driver.getTitle();
