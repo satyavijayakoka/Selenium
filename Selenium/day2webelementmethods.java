@@ -71,10 +71,10 @@ public class day2webelementmethods {
 		System.out.println(q1);
 		
 		// is_enabled() ;#radio-buttons-selected-disabled (all ids)
-		//id --lettuce:#radio-buttons-selected-disabled; cabbage: #radio-buttons-selected-disabled; pumpkin:#radio-buttons-selected-disabled
+		
 		// q2-----> true
-		// #radio-buttons-selected-disabled // #radio-buttons-selected-disabled > input[type=radio]:nth-child(1)
-		//#radio-buttons-selected-disabled
+		 // #radio-buttons-selected-disabled > input[type=radio]:nth-child(1)
+
 		WebElement enabled_radioB = driver.findElement(By.cssSelector("#radio-buttons-selected-disabled"));
 		boolean q2 = enabled_radioB.isEnabled();
 		System.out.println(q2);
@@ -86,7 +86,7 @@ WebElement disabled_radioB=driver.findElement(By.cssSelector("#radio-buttons-sel
 		System.out.println(q3);
 		
 		
-		// is_selected()  #radio-buttons-selected-disabled > input[type=radio]:nth-child(5)
+		// is_selected() 
 		// pumpkin: #radio-buttons-selected-disabled > input[type=radio]:nth-child(5)
 		
 		// q4 -----> true

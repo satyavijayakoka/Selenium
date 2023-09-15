@@ -15,10 +15,19 @@ public class day10windowhandle {
 		 String parentwindow = driver.getWindowHandle();
 		 System.out.println(parentwindow);
 		 
+		 
+		// #contact-us > div > div.section-title > h1
+		 // on parent window we have to inspect and select contact us & copy the element (or) we can do it by id="contact-us"
+		 
 		 driver.findElement(By.cssSelector("#contact-us")).click();
+		
 		 
 		Set<String> windows = driver.getWindowHandles();
+		
 		for(String window: windows) {
+			
+			 System.out.println(window);
+			 
 			if(!window.equals(parentwindow)) {
 				driver.switchTo().window(window);
 				break;
@@ -40,7 +49,7 @@ public class day10windowhandle {
 		submit_button.click();
 		
 		driver.switchTo().window(parentwindow);
-		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getCurrentUrl()); 
 		
 		
 		
