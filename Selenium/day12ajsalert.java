@@ -12,10 +12,14 @@ public class day12ajsalert {
 		// visiting the url
 		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 		
+		// copy the element "result" on url
+		
 		WebElement ele = driver.findElement(By.id("result"));
 		// finding the element and clicking on it
 		
-		// test case 1:
+		// test case 1: for js alert click ok
+		//#content > div > ul > li:nth-child(1) > button
+		
 	/*	driver.findElement(By.cssSelector("#content > div > ul > li:nth-child(1) > button")).click();
 		
 		// switching to alert and get text
@@ -29,7 +33,7 @@ public class day12ajsalert {
 			System.out.println("test case 1 pass");
 		}*/
 		
-		// test case 2
+		// test case 2: for js confirm click ok
 		
 	/*	driver.findElement(By.cssSelector("#content > div > ul > li:nth-child(2) > button")).click();
 		String text = driver.switchTo().alert().getText();
@@ -42,7 +46,7 @@ public class day12ajsalert {
 		}*/
 		
 		
-		// test case 3:
+		// test case 3:  for js confirm click cancel
 		
 	/*	driver.findElement(By.cssSelector("#content > div > ul > li:nth-child(2) > button")).click();
 		String text2 = driver.switchTo().alert().getText();
@@ -54,7 +58,7 @@ public class day12ajsalert {
 			System.out.println("test case 3 pass");
 		}*/
 		
-		// test case 4
+		// test case 4 : for js prompt button click ok
 		
 	/*	driver.findElement(By.cssSelector("#content > div > ul > li:nth-child(3) > button")).click();
 		String text3 = driver.switchTo().alert().getText();
@@ -73,7 +77,7 @@ public class day12ajsalert {
 			System.out.println("test case fail");
 		}*/
 		
-		// test case 5:
+		// test case 5: for js prompt button click cancel
 		
 		driver.findElement(By.cssSelector("#content > div > ul > li:nth-child(3) > button")).click();
 		String text3 = driver.switchTo().alert().getText();
@@ -98,6 +102,10 @@ public class day12ajsalert {
 		
 		
 
+		// Modal Popup as homework 
+				// http://www.webdriveruniversity.com/Popup-Alerts/index.html
+				
+				
 	}
 
 }
