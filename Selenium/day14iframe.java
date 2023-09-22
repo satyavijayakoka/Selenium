@@ -19,11 +19,11 @@ public class day14iframe {
 		// visiting the url
 		driver.get("http://www.webdriveruniversity.com/IFrame/index.html");
 		
-		// iframe
+		// iframe --> searching by tagname and selecting it by id
 	//	WebElement ele = driver.findElement(By.cssSelector("#frame"));
 	//	driver.switchTo().frame(ele);
 		
-		// switch to iframe by index
+		// switch to iframe by index and searching the element "home"
 		
 		driver.switchTo().frame(0);
 		WebElement ele2 = driver.findElement(By.cssSelector(" #div-main-nav > div > ul > li.active > a"));
@@ -31,7 +31,7 @@ public class day14iframe {
 		
 		// switching back to main content
 		driver.switchTo().defaultContent();
-		// finding the element in main content
+		// finding the element in main content --> by id (#nav-title) heading of the page
 		driver.findElement(By.cssSelector("#nav-title")).isDisplayed();
 		
 		// validating the title of main content

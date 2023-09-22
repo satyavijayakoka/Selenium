@@ -43,6 +43,7 @@ public class day6locators {
 		
 		ele.sendKeys("standard_user");
 		
+		// finding password by using findElements locator and get(index)
 		List<WebElement> elelist = driver.findElements(By.className("input_error"));
 		elelist.get(1).sendKeys("secret_sauce");
 		

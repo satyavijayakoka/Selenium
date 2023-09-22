@@ -23,7 +23,7 @@ public class day13tables {
 		// visiting the url
 		driver.get("http://www.webdriveruniversity.com/Data-Table/index.html");
 		
-          // getting total number of rows
+          // getting total number of tables
 		
 		List<WebElement> tbl = driver.findElements(By.xpath("//*[table]"));
 		System.out.println(tbl.size());
